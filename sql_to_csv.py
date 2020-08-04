@@ -5,7 +5,7 @@ import sys
 # This prevents prematurely closed pipes from raising
 # an exception in Python
 # allow large content in the dump
-csv.field_size_limit(100000)
+csv.field_size_limit(10000000)
 
 def is_insert(line):
     """
